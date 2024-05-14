@@ -1,0 +1,19 @@
+.current {
+	color: green;
+}
+
+footer {
+	border-top: 1px solid black;
+}
+footer ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+footer ul li {
+	float: left;
+}
+footer ul li a {
+	display: block;
+	padding: 1rem 2rem 1rem 0;
+}
