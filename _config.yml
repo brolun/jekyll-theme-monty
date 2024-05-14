@@ -1,0 +1,6 @@
+# Site Data
+url: # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: # the subpath of your site, e.g. /blog
+title: Monty
+description: "Monty is a Jekyll theme inspired by CSS Naked Day."
+keywords: "jekyll,theme,blog"
