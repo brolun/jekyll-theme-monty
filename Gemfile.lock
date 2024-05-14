@@ -38,8 +38,12 @@ GEM
       safe_yaml (~> 1.0)
       terminal-table (>= 1.8, < 4.0)
       webrick (~> 1.7)
+    jekyll-feed (0.17.0)
+      jekyll (>= 3.7, < 5.0)
     jekyll-sass-converter (3.0.0)
       sass-embedded (~> 1.54)
+    jekyll-seo-tag (2.8.0)
+      jekyll (>= 3.8, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     kramdown (2.4.0)
@@ -72,6 +76,8 @@ PLATFORMS
   x86_64-linux-gnu
 
 DEPENDENCIES
+  jekyll-feed
+  jekyll-seo-tag
   jekyll-theme-monty!
 
 BUNDLED WITH
