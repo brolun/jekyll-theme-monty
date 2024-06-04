@@ -83,22 +83,12 @@ Start numbering with offset:
 
 ## Code
 
+Syntax highlighting
 Inline `code`
 
 Indented code
 
-    // Some comments
-    line 1 of code
-    line 2 of code
-    line 3 of code
-
-Block code "fences"
-
-```
-Sample text here...
-```
-
-Syntax highlighting
+JavaScript:
 
 ```js
 var foo = function (bar) {
@@ -106,6 +96,19 @@ var foo = function (bar) {
 };
 
 console.log(foo(5));
+```
+
+Ruby:
+
+```rb
+def show
+  puts "Outputting a very lo-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-ong lo-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-ong line"
+  @widget = Widget(params[:id])
+  respond_to do |format|
+    format.html # show.html.erb
+    format.json { render json: @widget }
+  end
+end
 ```
 
 ## Tables

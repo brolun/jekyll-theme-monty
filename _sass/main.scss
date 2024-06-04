@@ -17,3 +17,20 @@ footer ul li a {
 	display: block;
 	padding: 1rem 2rem 1rem 0;
 }
+code {
+	padding: 4px;
+	vertical-align: text-bottom;
+	font-family: "Drafting";
+	font-size: 0.9em;
+}
+pre {
+	padding: 1em;
+	border-left: 1px solid #222;
+	overflow: scroll;
+	position: relative;
+}
+.copy {
+	position: absolute;
+	top: 0;
+	right: 0;
+}

@@ -8,3 +8,8 @@ keywords: "jekyll,theme,blog"
 plugins:
     - jekyll-seo-tag
     - jekyll-feed
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+    input: GFM
