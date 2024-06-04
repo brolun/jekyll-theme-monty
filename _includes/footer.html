@@ -5,5 +5,8 @@
            <a href="{{ item.link }}" {% if page.url == item.link %} class="current" {% endif %}> {{ item.name }} </a>
         </li>
         {% endfor %} 
+        <li>
+            <a href="/feed.xml">RSS</a>
+        </li>
     </ul>
 </nav>
