@@ -15,37 +15,21 @@ Title: "Markdown demo post"
 
 ###### h6 Heading
 
+Paragraphs are easy to write, just hit Enter twice and start typing.
+
 ## Horizontal Rules
 
 ---
 
 ---
 
----
-
-## Typographic replacements
-
-Enable typographer option to see result.
-
-(c) (C) (r) (R) (tm) (TM) (p) (P) +-
-
-test.. test... test..... test?..... test!....
-
-!!!!!! ???? ,, -- ---
-
-"Smartypants, double quotes" and 'single quotes'
-
 ## Emphasis
 
-**This is bold text**
+**Text is made bold by adding \*\* on either side**
 
-**This is bold text**
+_Text is made italic by adding \* or \_ on either side_
 
-_This is italic text_
-
-_This is italic text_
-
-~~Strikethrough~~
+~~Text is made strikethrough by adding \~\~ on either side~~
 
 ## Blockquotes
 
@@ -57,38 +41,31 @@ _This is italic text_
 
 ## Lists
 
-Unordered
+### Unordered
 
--   Create a list by starting a line with `+`, `-`, or `*`
--   Sub-lists are made by indenting 2 spaces:
-    -   Marker character change forces new list start:
+-   Create a list by starting a line with `-`, or `*`
+    -   Sub-lists are made by indenting 2 spaces before the `-`, or `*`
         -   Ac tristique libero volutpat at
-        *   Facilisis in pretium nisl aliquet
-        -   Nulla volutpat aliquam velit
 -   Very easy!
 
-Ordered
+### Ordered
 
 1. Lorem ipsum dolor sit amet
 2. Consectetur adipiscing elit
+    1. Sub-list huzzah!
 3. Integer molestie lorem at massa
 
-4. You can use sequential numbers...
-5. ...or keep all the numbers as `1.`
+## Code / Syntax highlighting
 
-Start numbering with offset:
+### Inline
 
-57. foo
-1. bar
+Inline `code` is represented by adding \'\' on either side.
 
-## Code
+### Indented code
 
-Syntax highlighting
-Inline `code`
+Indented code can be represented by adding three ``` around the code block, and different languanges can be specified as well:
 
-Indented code
-
-JavaScript:
+#### JavaScript:
 
 ```js
 var foo = function (bar) {
@@ -98,7 +75,7 @@ var foo = function (bar) {
 console.log(foo(5));
 ```
 
-Ruby:
+#### Ruby:
 
 ```rb
 def show
@@ -111,6 +88,18 @@ def show
 end
 ```
 
+## Footnotes
+
+Footnote 1 link[^first].
+
+[^first]: Footnote text.
+
+Footnote 2 link[^second].
+
+[^second]: Footnote **can have markup**
+
+    and multiple paragraphs.
+
 ## Tables
 
 | Option | Description                                                               |
@@ -119,111 +108,16 @@ end
 | engine | engine to be used for processing templates. Handlebars is the default.    |
 | ext    | extension to be used for dest files.                                      |
 
-Right aligned columns
-
-| Option |                                                               Description |
-| -----: | ------------------------------------------------------------------------: |
-|   data | path to data files to supply the data that will be passed into templates. |
-| engine |    engine to be used for processing templates. Handlebars is the default. |
-|    ext |                                      extension to be used for dest files. |
-
 ## Links
 
 [link text](http://dev.nodeca.com)
 
-[link with title](http://nodeca.github.io/pica/demo/ "title text!")
-
-Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
-
 ## Images
 
 ![Minion](https://octodex.github.com/images/minion.png)
-![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
 
-Like links, Images also have a footnote style syntax
+## Subscript / Superscript
 
-![Alt text][id]
+This is superscript<sup>2</sup>.
 
-With a reference later in the document defining the URL location:
-
-[id]: https://octodex.github.com/images/dojocat.jpg "The Dojocat"
-
-## Plugins
-
-The killer feature of `markdown-it` is very effective support of
-[syntax plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin).
-
-### [Emojies](https://github.com/markdown-it/markdown-it-emoji)
-
-> Classic markup: :wink: :cry: :laughing: :yum:
->
-> Shortcuts (emoticons): :-) :-( 8-) ;)
-
-see [how to change output](https://github.com/markdown-it/markdown-it-emoji#change-output) with twemoji.
-
-### [Subscript](https://github.com/markdown-it/markdown-it-sub) / [Superscript](https://github.com/markdown-it/markdown-it-sup)
-
--   19^th^
--   H~2~O
-
-### [\<ins>](https://github.com/markdown-it/markdown-it-ins)
-
-++Inserted text++
-
-### [\<mark>](https://github.com/markdown-it/markdown-it-mark)
-
-==Marked text==
-
-### [Footnotes](https://github.com/markdown-it/markdown-it-footnote)
-
-Footnote 1 link[^first].
-
-Footnote 2 link[^second].
-
-Inline footnote^[Text of inline footnote] definition.
-
-Duplicated footnote reference[^second].
-
-[^first]: Footnote **can have markup**
-
-    and multiple paragraphs.
-
-[^second]: Footnote text.
-
-### [Definition lists](https://github.com/markdown-it/markdown-it-deflist)
-
-Term 1
-
-: Definition 1
-with lazy continuation.
-
-Term 2 with _inline markup_
-
-: Definition 2
-
-        { some code, part of Definition 2 }
-
-    Third paragraph of definition 2.
-
-_Compact style:_
-
-Term 1
-~ Definition 1
-
-Term 2
-~ Definition 2a
-~ Definition 2b
-
-### [Abbreviations](https://github.com/markdown-it/markdown-it-abbr)
-
-This is HTML abbreviation example.
-
-It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
-
-\*[HTML]: Hyper Text Markup Language
-
-### [Custom containers](https://github.com/markdown-it/markdown-it-container)
-
-::: warning
-_here be dragons_
-:::
+This is subscript<sub>2</sub>.
