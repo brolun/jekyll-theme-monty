@@ -1,16 +1,19 @@
 # Site Data
-url: # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: # the subpath of your site, e.g. /blog
-title: Monty
-description: "Monty is a Jekyll theme inspired by CSS Naked Day."
-keywords: "jekyll,theme,blog"
+url: # The full URL for your site, e.g. http://example.com
+title: Monty # Your site's title, used as part of the title tag
+tagline: # A short description of your site, used as part of the title tag
+description: Monty is a Jekyll theme inspired by CSS Naked Day. # A longer description used for the description meta tag
+keywords: jekyll,theme,blog
+
 enable-code-copy: true
 
 plugins:
-    - jekyll-seo-tag
     - jekyll-feed
+    - jekyll-seo-tag
 
 markdown: kramdown
 highlighter: rouge
 kramdown:
     input: GFM
+    smart_quotes: lsquo,rsquo,ldquo,rdquo
+    typographic_symbols: { hellip: ... }
