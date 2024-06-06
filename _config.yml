@@ -4,6 +4,7 @@ baseurl: # the subpath of your site, e.g. /blog
 title: Monty
 description: "Monty is a Jekyll theme inspired by CSS Naked Day."
 keywords: "jekyll,theme,blog"
+enable-code-copy: true
 
 plugins:
     - jekyll-seo-tag
