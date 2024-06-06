@@ -1,6 +1,6 @@
 ---
 layout: post
-Title: "Markdown demo post"
+title: Markdown demo post
 ---
 
 # h1 Heading
