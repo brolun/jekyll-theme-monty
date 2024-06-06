@@ -1,38 +1,93 @@
-.current {
-	color: green;
+// General styling
+html {
+	color: #222;
+	font-family: "Jost";
+	line-height: 1.5;
+	max-width: 80ch;
+	padding: 16px;
+}
+:is(h2, h3, h4, h5, h6) {
+	margin-top: 1.5em;
 }
 
+// Image styling
+img {
+	max-width: 100%;
+}
+
+// Footer styling
 footer {
 	border-top: 1px solid #222;
-	margin-top: 50px;
+	margin-top: 60px;
 }
-
 footer nav ul {
 	align-items: left;
 	display: inline-flex;
+	gap: 1.5em;
 	list-style-type: none;
 	padding: 0;
-	gap: 1.5em;
 }
 
-.posts-list {
+// List styling
+ul,
+ol {
+	font-variant-numeric: tabular-nums;
 	padding-left: 16px;
 }
 
+// Code syntax highlighting and copy button styling
 code {
-	padding: 4px;
-	vertical-align: text-bottom;
 	font-family: "Drafting";
-	font-size: 0.9em;
+	font-size: 0.8em;
+	padding: 0.3em;
+	vertical-align: text-bottom;
 }
 pre {
-	padding: 1em;
 	border-left: 1px solid #222;
+	max-height: 400px;
 	overflow: scroll;
+	padding: 10px 20px;
+	position: relative;
+}
+div .highlight {
 	position: relative;
 }
 .copy {
 	position: absolute;
-	top: 0;
 	right: 0;
+	top: 0;
+}
+
+// Blockquote styling
+blockquote {
+	border-left: 1px solid #222;
+	margin-left: 0;
+	padding-left: 20px;
+}
+
+// Table styling
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+table,
+th,
+td {
+	border: 1px solid;
+}
+th,
+td {
+	padding: 4px 8px;
+}
+
+// Horizontal rule styling
+hr {
+	border-bottom: 1px;
+}
+
+// Footnote styling
+.footnotes {
+	border-top: 1px dotted;
+	font-size: 0.8em;
+	margin-top: 2.5rem;
 }
