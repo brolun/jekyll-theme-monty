@@ -3,20 +3,22 @@
 }
 
 footer {
-	border-top: 1px solid black;
+	border-top: 1px solid #222;
+	margin-top: 50px;
 }
-footer ul {
+
+footer nav ul {
+	align-items: left;
+	display: inline-flex;
 	list-style-type: none;
-	margin: 0;
 	padding: 0;
+	gap: 1.5em;
 }
-footer ul li {
-	float: left;
+
+.posts-list {
+	padding-left: 16px;
 }
-footer ul li a {
-	display: block;
-	padding: 1rem 2rem 1rem 0;
-}
+
 code {
 	padding: 4px;
 	vertical-align: text-bottom;
