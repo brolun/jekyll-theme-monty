@@ -2,12 +2,13 @@
 layout: default
 ---
 
+<!-- {% include language.liquid %} -->
 <section>
-	<h2>About</h2>
+	<h2>{{ language.string.about }}</h2>
 	{{ content }}
 </section>
 <section>
-	<h2>Posts</h2>
+	<h2>{{ language.string.posts }}</h2>
 	<nav>
 		<ul>
 			{% for post in site.posts %}

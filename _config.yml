@@ -4,6 +4,7 @@ title: Monty # Your site's title, used as part of the title tag
 tagline: # A short description of your site, used as part of the title tag
 description: Monty is a Jekyll theme inspired by CSS Naked Day. # A longer description used for the description meta tag
 keywords: jekyll,theme,blog
+language: nb # Supported languages: en, nb
 
 enable-code-copy: true
 
