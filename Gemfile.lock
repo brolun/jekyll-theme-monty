@@ -1,3 +1,9 @@
+PATH
+  remote: .
+  specs:
+    jekyll-theme-monty (0.1.0)
+      jekyll (~> 4.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -74,9 +80,9 @@ PLATFORMS
   x86_64-linux-gnu
 
 DEPENDENCIES
-  jekyll
   jekyll-feed
   jekyll-seo-tag
+  jekyll-theme-monty!
 
 BUNDLED WITH
    2.5.9
