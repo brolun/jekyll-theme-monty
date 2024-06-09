@@ -1,3 +1,29 @@
+// Code syntax
+code {
+	font-family: "Drafting";
+	font-size: 0.8em;
+	padding: 0.3em;
+	vertical-align: text-bottom;
+}
+pre {
+	border-left: $border;
+	max-height: 400px;
+	overflow: scroll;
+	padding: $indentation;
+	position: relative;
+}
+
+// Code copy button
+div .highlight {
+	position: relative;
+}
+.copy {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+// Rouge theme igorpro syntax highlighting
 .highlight table td {
 	padding: 5px;
 }

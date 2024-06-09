@@ -1,6 +1,6 @@
-// General styling
+// General
 html {
-	color: #222;
+	color: $primary;
 	font-family: "Jost";
 	line-height: 1.5;
 	max-width: 80ch;
@@ -10,14 +10,14 @@ html {
 	margin-top: 1.5em;
 }
 
-// Image styling
+// Images
 img {
 	max-width: 100%;
 }
 
-// Footer styling
+// Footer
 footer {
-	border-top: 1px solid #222;
+	border-top: $border;
 	margin-top: 60px;
 }
 footer nav ul {
@@ -28,66 +28,47 @@ footer nav ul {
 	padding: 0;
 }
 
-// List styling
-ul,
-ol {
+// Lists
+:is(ul, ol) {
 	font-variant-numeric: tabular-nums;
 	padding-left: 16px;
 }
-
-// Code syntax highlighting and copy button styling
-code {
-	font-family: "Drafting";
-	font-size: 0.8em;
-	padding: 0.3em;
-	vertical-align: text-bottom;
+dt {
+	font-weight: bold;
 }
-pre {
-	border-left: 1px solid #222;
-	max-height: 400px;
-	overflow: scroll;
-	padding: 10px 20px;
-	position: relative;
-}
-div .highlight {
-	position: relative;
-}
-.copy {
-	position: absolute;
-	right: 0;
-	top: 0;
+:is(ul, ol) li li,
+dd {
+	margin-left: $indentation;
 }
 
-// Blockquote styling
+// Blockquotes
 blockquote {
-	border-left: 1px solid #222;
+	border-left: $border;
+	font-style: italic;
 	margin-left: 0;
-	padding-left: 20px;
+	padding-left: $indentation;
 }
 
-// Table styling
+// Tables
 table {
 	border-collapse: collapse;
 	width: 100%;
 }
-table,
-th,
-td {
-	border: 1px solid;
+:is(table, th, td) {
+	border: $border;
 }
-th,
-td {
+:is(th, td) {
 	padding: 4px 8px;
 }
 
-// Horizontal rule styling
+// Horizontal rules
 hr {
 	border-bottom: 1px;
 }
 
-// Footnote styling
+// Footnotes
 .footnotes {
 	border-top: 1px dotted;
-	font-size: 0.8em;
-	margin-top: 2.5rem;
+	font-size: 0.9em;
+	margin-top: 30px;
 }
