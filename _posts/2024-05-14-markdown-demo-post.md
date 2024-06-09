@@ -3,121 +3,88 @@ layout: post
 title: Markdown demo post
 ---
 
-# h1 Heading
+Text can be **bold**, _italic_, or ~~strikethrough~~.Superscript<sup>2</sup> and subscript<sub>2</sub> is also possible, and so are footnotes[^first].
 
-## h2 Heading
+[^first]: Footnote text can have _markup_.
 
-### h3 Heading
+[Link to another page](./another-page.html).
 
-#### h4 Heading
+There should be whitespace between paragraphs.
 
-##### h5 Heading
+There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
-###### h6 Heading
+# Header 1
 
-Paragraphs are easy to write, just hit Enter twice and start typing.
+This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
 
-## Horizontal Rules
+## Header 2
 
----
-
----
-
-## Emphasis
-
-**Text is made bold by adding \*\* on either side**
-
-_Text is made italic by adding \* or \_ on either side_
-
-~~Text is made strikethrough by adding \~\~ on either side~~
-
-## Blockquotes
-
-> Blockquotes can also be nested...
+> This is a blockquote following a header.
 >
-> > ...by using additional greater-than signs right next to each other...
-> >
-> > > ...or with spaces between arrows.
+> When something is important enough, you do it even if the odds are not in your favor.
 
-## Lists
+### Header 3
 
-### Unordered
-
--   Create a list by starting a line with `-`, or `*`
-    -   Sub-lists are made by indenting 2 spaces before the `-`, or `*`
-        -   Ac tristique libero volutpat at
--   Very easy!
-
-### Ordered
-
-1. Lorem ipsum dolor sit amet
-2. Consectetur adipiscing elit
-    1. Sub-list huzzah!
-3. Integer molestie lorem at massa
-
-## Code / Syntax highlighting
-
-### Inline
-
-Inline `code` is represented by adding \'\' on either side.
-
-### Indented code
-
-Indented code can be represented by adding three ``` around the code block, and different languanges can be specified as well:
-
-#### JavaScript:
+Here is a bit of `inline code`.
 
 ```js
-var foo = function (bar) {
-	return bar++;
+// Javascript code with syntax highlighting.
+var fun = function lang(l) {
+	dateformat.i18n = require("./lang/" + l);
+	return true;
 };
-
-console.log(foo(5));
 ```
 
-#### Ruby:
-
-```rb
-def show
-  puts "Outputting a very lo-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-ong lo-o-o-o-o-o-o-o-o-o-o-o-o-o-o-o-ong line"
-  @widget = Widget(params[:id])
-  respond_to do |format|
-    format.html # show.html.erb
-    format.json { render json: @widget }
-  end
+```ruby
+# Ruby code with syntax highlighting
+GitHubPages::Dependencies.gems.each do |gem, version|
+  s.add_dependency(gem, "= #{version}")
 end
 ```
 
-## Footnotes
+```
+Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
+```
 
-Footnote 1 link[^first].
+#### Header 4
 
-[^first]: Footnote text.
+-   This is an unordered list following a header.
+-   Level 1 item
+    -   Level 2 item
+        -   Level 3 item
 
-Footnote 2 link[^second].
+##### Header 5
 
-[^second]: Footnote **can have markup**
+1.  This is an ordered list following a header.
+2.  Level 1 item
+    1. Level 2 item
 
-    and multiple paragraphs.
+###### Header 6
 
-## Tables
+| head1        | head two          | three |
+| :----------- | :---------------- | :---- |
+| ok           | good swedish fish | nice  |
+| out of stock | good and plenty   | nice  |
+| ok           | good `oreos`      | hmm   |
+| ok           | good `zoute` drop | yumm  |
 
-| Option | Description                                                               |
-| ------ | ------------------------------------------------------------------------- |
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default.    |
-| ext    | extension to be used for dest files.                                      |
+### There's a horizontal rule below this.
 
-## Links
+---
 
-[link text](http://dev.nodeca.com)
-
-## Images
+### Image
 
 ![Minion](https://octodex.github.com/images/minion.png)
 
-## Subscript / Superscript
+### Definition lists can be used with HTML syntax.
 
-This is superscript<sup>2</sup>.
-
-This is subscript<sub>2</sub>.
+<dl>
+<dt>Name</dt>
+<dd>Godzilla</dd>
+<dt>Born</dt>
+<dd>1952</dd>
+<dt>Birthplace</dt>
+<dd>Japan</dd>
+<dt>Color</dt>
+<dd>Green</dd>
+</dl>
