@@ -8,6 +8,8 @@
 		<li>
 			<a href="{{ '/feed.xml' | relative_url }}">RSS</a>
 		</li>
+	</ul>
+	<ul>
 		{% if page.previous.url %}
 		<li>
 			<a class="prev" href="{{page.previous.url}}"
@@ -21,9 +23,11 @@
 		{% endif %}
 	</ul>
 </nav>
-<p class="copyright">
-	© {{ site.title }} {{ site.time | date: '%Y' }}. {{
-	language.string.copyright }}
+
+<p>
+	{% if site.copyright %}
+	<span>{{ site.copyright }}. </span>
+	{% endif %} {{ language.string.copyright }}
 	<a href="https://jekyllrb.com/" target="_blank">Jekyll</a> &
 	<a
 		href="https://jekyll-themes.com/brolun/jekyll-theme-monty"
