@@ -8,8 +8,6 @@ language: en # Supported languages: en, nb
 
 copyright: © Monty 2024
 
-enable-code-copy: true
-
 plugins:
     - jekyll-feed
     - jekyll-seo-tag
