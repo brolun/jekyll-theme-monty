@@ -10,22 +10,28 @@ html {
 	margin-top: 1.5em;
 }
 
-// Images
-img {
-	max-width: 100%;
-}
-
 // Footer
 footer {
 	border-top: $border;
-	margin-top: 60px;
+	margin-top: 50px;
+}
+footer nav {
+	display: inline-flex;
+	flex-wrap: wrap;
 }
 footer nav ul {
 	align-items: left;
 	display: inline-flex;
-	gap: 1.5em;
+	flex-wrap: wrap;
+	gap: 20px;
 	list-style-type: none;
-	padding: 0;
+	margin-bottom: 0;
+	padding: 0 20px 0 0;
+}
+
+// Images
+img {
+	max-width: 100%;
 }
 
 // Lists
@@ -68,7 +74,8 @@ hr {
 
 // Footnotes
 .footnotes {
-	border-top: 1px dotted;
-	font-size: 0.9em;
-	margin-top: 30px;
+	margin-top: 2em;
+}
+.footnotes ol li::marker {
+	font-variant-position: super;
 }
