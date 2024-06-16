@@ -3,6 +3,8 @@ layout: default
 ---
 
 <!-- {% include language.liquid %} -->
+{% assign title = page.title | default: site.title %}
+<h1>{{ title }}</h1>
 <section>
 	<h2>{{ language.string.about }}</h2>
 	{{ content }}
