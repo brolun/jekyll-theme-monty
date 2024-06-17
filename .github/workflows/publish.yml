@@ -1,0 +1,23 @@
+name: Publish gem to RubyGems.org
+
+on:
+    release:
+        types: [released]
+
+permissions:
+    id-token: write
+    contents: write
+
+jobs:
+    publish:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Check out repository
+              uses: actions/checkout@v4
+            - name: Set up Ruby
+              uses: ruby/setup-ruby@v1
+              with:
+                  bundler-cache: true
+                  ruby-version: ruby
+            - name: Publish gem
+              uses: rubygems/release-gem@v1
