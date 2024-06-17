@@ -13,13 +13,15 @@
 	<ul>
 		{% if page.previous.url %}
 		<li>
-			<a class="prev" href="{{page.previous.url}}"
+			<a class="prev" href="{{ page.previous.url | relative_url }}"
 				>« {{page.previous.title}}
 			</a>
 		</li>
 		{% endif %} {% if page.next.url %}
 		<li>
-			<a class="next" href="{{page.next.url}}">{{page.next.title}} » </a>
+			<a class="next" href="{{ page.next.url | relative_url }}"
+				>{{page.next.title}} »
+			</a>
 		</li>
 		{% endif %}
 	</ul>
