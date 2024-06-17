@@ -1,5 +1,9 @@
 # Monty
 
+[![GitHub Release](https://img.shields.io/github/v/release/brolun/jekyll-theme-monty)](https://github.com/brolun/jekyll-theme-monty/releases)
+[![Gem Version](https://img.shields.io/gem/v/jekyll-theme-monty)](https://rubygems.org/gems/jekyll-theme-monty)
+[![Gem Total Downloads](https://img.shields.io/gem/dt/jekyll-theme-monty)](https://rubygems.org/gems/jekyll-theme-monty)
+[![GitHub License](https://img.shields.io/github/license/brolun/jekyll-theme-monty)](https://github.com/brolun/jekyll-theme-monty/blob/main/LICENSE)
 
 Monty is a Jekyll theme inspired by [CSS Naked Day](https://css-naked-day.github.io/). It has just enough styling to make it appealing and different, yet is almost as stripped back as [the Emperor parading in his full monty](https://andersen.sdu.dk/vaerk/hersholt/TheEmperorsNewClothes_e.html).
 
