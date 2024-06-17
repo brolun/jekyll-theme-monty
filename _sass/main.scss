@@ -12,7 +12,6 @@ html {
 
 // Footer
 footer {
-	border-top: $border;
 	margin-top: 50px;
 }
 footer nav {
@@ -70,6 +69,8 @@ table {
 // Horizontal rules
 hr {
 	border-bottom: 1px;
+	color: $primary;
+	margin: 0;
 }
 
 // Footnotes
