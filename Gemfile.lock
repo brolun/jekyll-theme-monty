@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    jekyll-theme-monty (1.0.0)
+    jekyll-theme-monty (1.0.1)
       jekyll (~> 4.3)
 
 GEM

@@ -14,7 +14,7 @@ Monty is designed for [blogging on GitHub Pages](https://docs.github.com/en/page
 To use the Monty theme, add the following to your site's `_config.yaml`:
 
 ```yaml
-remote_theme: brolun/jekyll-theme-monty@1.0.0
+remote_theme: brolun/jekyll-theme-monty@1.0.1
 plugins:
     - jekyll-remote-theme
 ```
