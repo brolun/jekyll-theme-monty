@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-monty"
-  spec.version       = "1.0.2"
+  spec.version       = "1.1.0"
   spec.authors       = ["brolun"]
   spec.email         = ["luna.brodersen@gmail.com"]
 
@@ -12,5 +12,5 @@ Gem::Specification.new do |spec|
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_data|_layouts|_includes|_sass|LICENSE|README\.md|CHANGELOG\.md|_config\.yml|feed\.xml)!i) }
 
-  spec.add_runtime_dependency "jekyll", "~> 4.3"
+  spec.add_runtime_dependency "jekyll", "~> 3.10"
 end
