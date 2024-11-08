@@ -13,4 +13,5 @@ Gem::Specification.new do |spec|
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_data|_layouts|_includes|_sass|LICENSE|README\.md|CHANGELOG\.md|_config\.yml|feed\.xml)!i) }
 
   spec.add_runtime_dependency "jekyll", "~> 3.10"
+  spec.add_development_dependency "rake"
 end

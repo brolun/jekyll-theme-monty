@@ -17,7 +17,9 @@ To use the Monty theme, add the following to your site's `_config.yaml`:
 remote_theme: brolun/jekyll-theme-monty
 plugins:
     - jekyll-remote-theme
+    - jekyll-feed
     - jekyll-seo-tag
+    - jekyll-data
 ```
 
 Optionally, if you would like to preview your site locally, add the following to your site's `Gemfile`:
