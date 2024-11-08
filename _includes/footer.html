@@ -1,36 +1,28 @@
-<hr />
 <nav>
-	<ul>
-		<li>
-			<a href="{{ '/index.html' | relative_url }}"
-				>{{ language.string.home }}</a
-			>
-		</li>
-		<li>
-			<a href="{{ '/feed.xml' | relative_url }}">RSS</a>
-		</li>
-	</ul>
 	<ul>
 		{% if page.previous.url %}
 		<li>
 			<a class="prev" href="{{ page.previous.url | relative_url }}"
-				>« {{page.previous.title}}
+				>❮ <span>{{page.previous.title | truncate: 20}}</span>
 			</a>
 		</li>
 		{% endif %} {% if page.next.url %}
 		<li>
 			<a class="next" href="{{ page.next.url | relative_url }}"
-				>{{page.next.title}} »
+				><span>{{page.next.title | truncate: 20}}</span> ❯
 			</a>
 		</li>
 		{% endif %}
 	</ul>
 </nav>
-
-<p>
-	{{ site.license }} 🗲
-	<a href="https://jekyllrb.com/" target="_blank">Jekyll</a> &
-	<a href="https://github.com/brolun/jekyll-theme-monty" target="_blank"
-		>Monty</a
-	>.
-</p>
+<hr />
+<ul>
+	<li>© {{ 'now' | date: "%Y" }} {{ site.title }}</li>
+	<li>⌘ <a href="{{ '/feed.xml' | relative_url }}">RSS</a></li>
+	<li>
+		🗲 <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> &
+		<a href="https://github.com/brolun/jekyll-theme-monty" target="_blank"
+			>Monty</a
+		>
+	</li>
+</ul>
