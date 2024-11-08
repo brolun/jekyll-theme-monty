@@ -1,9 +1,8 @@
 ---
 ---
 
-<!-- {% include language.liquid %} -->
 <!DOCTYPE html>
-<html lang="{{ language.locale }}">
+<html lang="{{ site.language | default: 'en' }}">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,9 +14,7 @@
 		{% feed_meta %} {% seo %}
 	</head>
 	<body>
-		<main>
-			{{ content }}
-		</main>
+		<main>{{ content }}</main>
 		<footer>{% include footer.html %}</footer>
 	</body>
 </html>

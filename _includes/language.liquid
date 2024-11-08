@@ -1,4 +1,0 @@
-{% assign default = site.data.languages | where: "locale", "en" |
-first %}
-{% assign language = site.data.languages | where: "locale", site.language |
-first | default: default %}
