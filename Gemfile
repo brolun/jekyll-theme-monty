@@ -3,8 +3,7 @@
 source "https://rubygems.org"
 gemspec
 
-gem "kramdown-parser-gfm"
-gem "rake"
-
 gem 'jekyll-feed'
 gem 'jekyll-seo-tag'
+gem 'jekyll-data'
+gem 'kramdown-parser-gfm'
