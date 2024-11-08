@@ -5,5 +5,4 @@ gemspec
 
 gem 'jekyll-feed'
 gem 'jekyll-seo-tag'
-gem 'jekyll-data'
 gem 'kramdown-parser-gfm'

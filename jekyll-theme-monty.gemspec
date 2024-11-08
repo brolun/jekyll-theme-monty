@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/brolun/jekyll-theme-monty"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_data|_layouts|_includes|_sass|LICENSE|README\.md|CHANGELOG\.md|_config\.yml|feed\.xml)!i) }
+  spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README\.md|CHANGELOG\.md|_config\.yml|feed\.xml)!i) }
 
   spec.add_runtime_dependency "jekyll", "~> 3.10"
   spec.add_development_dependency "rake"
