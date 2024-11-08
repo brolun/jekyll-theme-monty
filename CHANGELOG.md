@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [1.2.0]
 
+### Added
+
+-   Header to posts
+
+### Fixed
+
+-   Footer styling
+
 ### Removed
 
 -   Remove language localisation
