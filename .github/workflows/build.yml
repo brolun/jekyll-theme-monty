@@ -1,9 +1,8 @@
 name: Build Jekyll site to Pages
 
 on:
-    push:
-        branches: [main]
-
+    release:
+        types: published
     workflow_dispatch:
 
 permissions:
