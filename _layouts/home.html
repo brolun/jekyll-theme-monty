@@ -4,20 +4,14 @@ layout: default
 
 <!-- {% include language.liquid %} -->
 <h1>{{ page.title | default: site.title }}</h1>
-<section>
-	<h2>{{ language.string.about }}</h2>
-	{{ content }}
-</section>
-<section>
-	<h2>{{ language.string.posts }}</h2>
-	<nav>
-		<ul>
-			{% for post in site.posts %}
-			<li>
-				<span class="date">{{ post.date | date: "%F" }}</span>:
-				<a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-			</li>
-			{% endfor %}
-		</ul>
-	</nav>
-</section>
+{{ content }}
+<nav>
+	<ul>
+		{% for post in site.posts %}
+		<li>
+			<span class="date">{{ post.date | date: "%F" }}</span>:
+			<a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+		</li>
+		{% endfor %}
+	</ul>
+</nav>
