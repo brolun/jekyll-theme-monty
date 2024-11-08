@@ -6,8 +6,6 @@ description: Monty is a Jekyll theme inspired by CSS Naked Day.
 
 language: en
 
-license: © Monty 2024.
-
 plugins:
     - jekyll-feed
     - jekyll-seo-tag
