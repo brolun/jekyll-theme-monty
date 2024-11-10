@@ -7,27 +7,33 @@ html {
 	padding: 16px;
 }
 :is(h2, h3, h4, h5, h6) {
-	margin-top: 1.5em;
+	margin-top: 1em;
 }
 
 // Footer
 footer {
-	margin: 50px auto 30px;
-}
-footer nav ul {
-	justify-content: space-between;
-}
-footer hr {
-	margin: 30px 0;
+	margin: 2em auto;
 }
 footer ul {
 	align-items: left;
 	display: flex;
 	flex-wrap: wrap;
-	gap: 16px 20px;
+	gap: 1em;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+}
+footer ul li {
+	margin-left: 0;
+}
+footer nav ul {
+	justify-content: space-between;
+}
+.next {
+	margin-left: auto;
+}
+footer hr {
+	margin: 24px 0;
 }
 
 // Images
@@ -43,9 +49,12 @@ img {
 dt {
 	font-weight: bold;
 }
-:is(ul, ol) li li,
+:is(ul, ol) li,
 dd {
 	margin-left: $indentation;
+}
+.posts-list {
+	padding-top: 1em;
 }
 
 // Blockquotes

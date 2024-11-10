@@ -1,15 +1,15 @@
 <nav>
 	<ul>
 		{% if page.previous.url %}
-		<li>
-			<a class="prev" href="{{ page.previous.url | relative_url }}"
-				>❮ <span>{{page.previous.title | truncate: 20}}</span>
+		<li class="prev">
+			<a href="{{ page.previous.url | relative_url }}"
+				>❮ <span>{{page.previous.title | truncate: 18}}</span>
 			</a>
 		</li>
 		{% endif %} {% if page.next.url %}
-		<li>
-			<a class="next" href="{{ page.next.url | relative_url }}"
-				><span>{{page.next.title | truncate: 20}}</span> ❯
+		<li class="next">
+			<a href="{{ page.next.url | relative_url }}"
+				><span>{{page.next.title | truncate: 18}}</span> ❯
 			</a>
 		</li>
 		{% endif %}

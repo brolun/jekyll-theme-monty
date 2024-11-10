@@ -7,6 +7,11 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link
+			rel="preload"
+			href="{{ '/assets/css/styles.css' | relative_url }}"
+			as="style"
+		/>
+		<link
 			rel="stylesheet"
 			href="{{ '/assets/css/styles.css' | relative_url }}"
 		/>
@@ -14,7 +19,7 @@
 		{% feed_meta %} {% seo %}
 	</head>
 	<body>
-		<main>{{ content }}</main>
+		{{ content }}
 		<footer>{% include footer.html %}</footer>
 	</body>
 </html>

@@ -2,15 +2,19 @@
 layout: default
 ---
 
-<h1>{{ page.title | default: site.title }}</h1>
-{{ content }}
-<nav>
-	<ul>
-		{% for post in site.posts %}
-		<li>
-			<span class="date">{{ post.date | date: "%F" }}</span>:
-			<a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-		</li>
-		{% endfor %}
-	</ul>
-</nav>
+<main>
+	<article>
+		<h1>{{ page.title | default: site.title }}</h1>
+		{{ content }}
+		<nav>
+			<ul class="posts-list">
+				{% for post in site.posts %}
+				<li>
+					<span class="date">{{ post.date | date: "%F" }}</span>:
+					<a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+				</li>
+				{% endfor %}
+			</ul>
+		</nav>
+	</article>
+</main>
