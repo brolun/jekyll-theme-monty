@@ -40,7 +40,7 @@ title: [Your site's title]
 Additionally, you may choose to set the following optional variable:
 
 ```yaml
-language: [A language code; 'en' is default]
+locale: [A locale code; 'en_US' is default]
 ```
 
 ### Front matter variables

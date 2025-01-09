@@ -4,7 +4,7 @@ title: Monty
 tagline: A Jekyll theme
 description: Monty is a Jekyll theme inspired by CSS Naked Day.
 
-language: en
+locale: en_US
 
 plugins:
     - jekyll-feed

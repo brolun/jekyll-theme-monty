@@ -2,7 +2,9 @@
 ---
 
 <!DOCTYPE html>
-<html lang="{{ site.language | default: 'en' }}">
+<html
+	lang="{{ page.locale | default: site.locale | default: 'en' | slice: 0 , 2  }}"
+>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
