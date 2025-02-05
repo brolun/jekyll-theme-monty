@@ -76,6 +76,13 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 
 ![Minion](https://octodex.github.com/images/minion.png)
 
+### Figure
+
+<figure>
+  <img src="https://octodex.github.com/images/surftocat.png" alt="Surfocat" />
+  <figcaption>Surfocat is is surfing and enjoying themselves.</figcaption>
+</figure>
+
 ### Definition lists can be used with HTML syntax.
 
 <dl>
