@@ -3,13 +3,13 @@
 		{% if page.previous.url %}
 		<li class="prev">
 			<a href="{{ page.previous.url | relative_url }}"
-				>❮ <span>{{page.previous.title | truncate: 18}}</span>
+				>❮ <span>{{page.previous.title | truncate: 32}}</span>
 			</a>
 		</li>
 		{% endif %} {% if page.next.url %}
 		<li class="next">
 			<a href="{{ page.next.url | relative_url }}"
-				><span>{{page.next.title | truncate: 18}}</span> ❯
+				><span>{{page.next.title | truncate: 32}}</span> ❯
 			</a>
 		</li>
 		{% endif %}
