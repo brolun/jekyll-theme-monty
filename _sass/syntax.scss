@@ -11,6 +11,9 @@ pre {
 	overflow: auto;
 	padding-left: $indentation;
 	position: relative;
+	background-color: transparent;
+	scrollbar-width: thin;
+	scrollbar-color: rgba(100, 100, 100, 0.5) transparent;
 }
 
 // Rouge theme igorpro syntax highlighting
