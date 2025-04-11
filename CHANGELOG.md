@@ -4,6 +4,22 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.5]
+
+### Fixed
+
+-   Truncating in prev+next footer navigation
+-   Padding in code snippets to match padding in blockquotes
+-   Baseline alignments between Jost and Drafting
+-   Scrollbar styling in code snippets after padding decrease
+
+## [1.2.4]
+
+### Fixed
+
+-   Change gap size for figures
+-   Change max width for images to percent
+
 ## [1.2.3]
 
 ### Fixed
